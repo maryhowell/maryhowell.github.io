@@ -1470,6 +1470,7 @@
 		.image img {
 			display: block;
 			width: 100%;
+			background-size:contain;
 		}
 
 		.image.featured {
