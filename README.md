@@ -1,3 +1,3 @@
-#### Mary Howell person portfolio page
+#### Mary Howell personal portfolio page
 
 [Live](https://maryhowell.github.io)
