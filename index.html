@@ -1,150 +1,631 @@
-<!DOCTYPE HTML>
-<!--
-	Overflow by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 	<head>
-		<title>Mary Howell</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-105596053-2', 'auto');
-		  ga('send', 'pageview');
-
-		</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mary Howell - Software Engineer specializing in Typescript, React, GraphQL, Design Systems,
+REST">
+    <meta name="keywords" content="software Engineer, ruby, rails, javascript, react, redux, web development, textile design">
+    <meta name="author" content="Mary Howell">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://maryhowell.github.io/">
+    <meta property="og:title" content="Mary Howell - Software Engineer">
+    <meta property="og:description" content="Software Engineer specializing in Typescript, React, GraphQL, Design Systems,
+REST">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://maryhowell.github.io/">
+    <meta property="twitter:title" content="Mary Howell - Software Engineer">
+    <meta property="twitter:description" content="Software Engineer specializing in Typescript, React, GraphQL, Design Systems,
+REST">
+    
+    <title>Mary Howell - Software Engineer</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/css/fabric.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/fabric.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧵</text></svg>">
 	</head>
 	<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#home" aria-label="Mary Howell - Home">
+                    <span class="brand-text">Mary Howell</span>
+                    <span class="brand-stitch"></span>
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="#home" role="menuitem">Home</a></li>
+                <li role="none"><a href="#about" role="menuitem">About</a></li>
+                <li role="none"><a href="#projects" role="menuitem">Projects</a></li>
+                <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+                <li role="none" class="theme-switcher">
+                    <div class="theme-dropdown">
+                        <button class="theme-toggle" aria-label="Change theme" aria-expanded="false">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="5"/>
+                                <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                            </svg>
+                            <span class="theme-label">Theme</span>
+                        </button>
+                        <div class="theme-options">
+                            <button class="theme-option" data-theme="warm" aria-label="Warm theme">
+                                <div class="theme-preview warm-preview"></div>
+                                <span>Warm</span>
+                            </button>
+                            <button class="theme-option" data-theme="cool" aria-label="Purple theme">
+                                <div class="theme-preview cool-preview"></div>
+                                <span>Purple</span>
+                            </button>
+                            <button class="theme-option" data-theme="dark" aria-label="Dark theme">
+                                <div class="theme-preview dark-preview"></div>
+                                <span>Dark</span>
+                            </button>
+                            <button class="theme-option" data-theme="light" aria-label="Pastel theme">
+                                <div class="theme-preview light-preview"></div>
+                                <span>Pastel</span>
+                            </button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<h1>Mary Howell</h1>
-					<p>Software Developer </br> Ruby, Rails, Javascript, React/Redux</p>
-				</header>
-				<footer>
-					<a href="#banner" class="button style2 scrolly-middle">Personal Bio</a>
-				</footer>
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero" aria-labelledby="hero-heading">
+            <div class="fabric-overlay"></div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="thread-line"></div>
+                    <h1 id="hero-heading" class="hero-title">
+                        <span class="greeting">Hello, I'm</span>
+                        <span class="name">Mary Howell</span>
+                    </h1>
+                    <p class="hero-subtitle">Software Engineer</p>
+                    <p class="hero-description">
+											Senior Software Engineer with over 8 years of experience, with a strong frontend focus. Passionate about driving team and cross-functional
+											collaboration, with a proven track record of driving alignment and proposing new workflows. Proficient in React, GraphQL, Design Systems,
+											REST, and more, with a strong focus on optimizing application performance and ensuring product quality.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary" aria-label="View my projects">
+                            <span class="btn-text">View My Work</span>
+                            <span class="btn-stitch"></span>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" aria-label="Get in touch">
+                            <span class="btn-text">Get In Touch</span>
+                            <span class="btn-stitch"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="fabric-circle">
+                        <div class="fabric-texture">
+                            <div class="weave-pattern">
+                                <div class="warp"></div>
+                                <div class="weft"></div>
+                            </div>
+                            <div class="profile-photo">
+                                <img src="images/IMG_0053.JPG" alt="Mary Howell - Software Engineer" class="profile-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="floating-threads">
+                <div class="thread thread-1"></div>
+                <div class="thread thread-2"></div>
+                <div class="thread thread-3"></div>
+            </div>
 			</section>
 
-		<!-- Banner -->
-			<section id="banner">
-				<header>
-					<h2>Background</h2>
+        <!-- About Section -->
+        <section id="about" class="about" aria-labelledby="about-heading">
+            <div class="fabric-section-overlay"></div>
+            <div class="container">
+                <header class="section-header">
+                    <div class="section-thread"></div>
+                    <h2 id="about-heading" class="section-title">About Me</h2>
+                    <p class="section-subtitle">From digital textile research to software development</p>
 				</header>
-				<p>I spent my undergrad and early career in digital textile research which introduced me to web development and script automation through a<br /> start-up I worked with.
-					 I found myself drawn to learn about how to develop and program to meet needs within<br /> my own work environment.
-					  I decided to further my education learning a Full Stack curriculum.</a><br />
-				<footer>
-					<a href="#first" class="button style2 scrolly">Projects</a>
-				</footer>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="textile-card">
+                            <div class="card-fabric"></div>
+                            <div class="card-content">
+                                <p>
+                                    My journey into software development began with digital textile research during my undergraduate studies. 
+                                    Working with a startup, I discovered the power of web development and script automation to solve 
+                                    real-world problems in my field.
+                                </p>
+                                <p>
+                                    This experience sparked my curiosity about programming and led me to pursue a comprehensive 
+                                    Full Stack curriculum. I found myself drawn to the intersection of creativity and technology, 
+                                    where I could build solutions that make a meaningful impact.
+                                </p>
+                                <p>
+                                    Today, I specialize in creating robust web applications using modern technologies like Typescript, React, GraphQL, Design Systems,
+																		REST, and more. I'm passionate about writing clean, maintainable code and creating 
+                                    user experiences that are both beautiful and functional.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills">
+                        <div class="skills-fabric">
+                            <h3>Technical Skills</h3>
+                            <div class="skills-grid">
+                                <div class="skill-category">
+                                    <div class="skill-fabric-texture"></div>
+                                    <h4>Backend</h4>
+                                    <ul class="skill-list">
+                                        <li><span class="skill-thread"></span>Typescript</li>
+                                        <li><span class="skill-thread"></span>React</li>
+                                        <li><span class="skill-thread"></span>GraphQL</li>
+                                        <li><span class="skill-thread"></span>Design Systems</li>
+                                        <li><span class="skill-thread"></span>PostgreSQL</li>
+                                        <li><span class="skill-thread"></span>RESTful APIs</li>
+                                    </ul>
+                                </div>
+                                <div class="skill-category">
+                                    <div class="skill-fabric-texture"></div>
+                                    <h4>Frontend</h4>
+                                    <ul class="skill-list">
+                                        <li><span class="skill-thread"></span>JavaScript (ES6+)</li>
+                                        <li><span class="skill-thread"></span>Redux</li>
+                                        <li><span class="skill-thread"></span>HTML5 & CSS3</li>
+                                    </ul>
+                                </div>
+                                <div class="skill-category">
+                                    <div class="skill-fabric-texture"></div>
+                                    <h4>Tools & Others</h4>
+                                    <ul class="skill-list">
+                                        <li><span class="skill-thread"></span>Git & GitHub</li>
+                                        <li><span class="skill-thread"></span>Design Systems</li>
+                                        <li><span class="skill-thread"></span>Responsive Design</li>
+                                        <li><span class="skill-thread"></span>Agile Development</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 			</section>
 
-		<!-- Feature 1 -->
-			<article id="first" class="container box style1 right">
-				<a href="https://github.com/maryhowell/Unraveled" class="image fit"><img src="https://res.cloudinary.com/unravled/image/upload/v1502910116/image_gyhhpy.png" alt="" /></a>
-				<div class="inner">
-					<header>
-						<h2>UnRaveld</h2>
+        <!-- Projects Section -->
+        <section id="projects" class="projects" aria-labelledby="projects-heading">
+            <div class="fabric-section-overlay"></div>
+            <div class="container">
+                <header class="section-header">
+                    <div class="section-thread"></div>
+                    <h2 id="projects-heading" class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">A tapestry of my recent work</p>
 					</header>
-					<p>UnRaveld is a single-page e-commerce website that is inspired by Etsy, Ravelry, and Brooklyn Tweed.</p>
+                
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-fabric">
+                            <div class="project-image">
+                                <img src="https://res.cloudinary.com/unravled/image/upload/v1502910116/image_gyhhpy.png" 
+                                     alt="UnRaveld e-commerce website screenshot" 
+                                     loading="lazy">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-thread"></div>
+                                <h3 class="project-title">UnRaveld</h3>
+                                <p class="project-description">
+                                    A single-page e-commerce website inspired by Etsy, Ravelry, and Brooklyn Tweed. 
+                                    Built with modern web technologies to provide a seamless shopping experience for 
+                                    textile enthusiasts.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Ruby on Rails</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/maryhowell/Unraveled" class="project-link" 
+                                       target="_blank" rel="noopener noreferrer" aria-label="View UnRaveld on GitHub">
+                                        <span>View Code</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
 				</div>
 			</article>
 
-		<!-- Feature 2 -->
-			<article class="container box style1 left">
-				<a href="https://github.com/rmurphy178/insulince" class="image fit"><img src="https://res.cloudinary.com/unravled/image/upload/v1502720739/IMG_3420_undzod.png" alt="" /></a>
-				<div class="inner">
-					<header>
-						<h2>Insulince</h2>
-					</header>
-					<p>Insulince is a project aiming to help anyone with Insulin Resistance Syndrome to track nutrition and food intake.</p>
+                    <article class="project-card">
+                        <div class="project-fabric">
+                            <div class="project-image">
+                                <img src="https://res.cloudinary.com/unravled/image/upload/v1502720739/IMG_3420_undzod.png" 
+                                     alt="Insulince health tracking app screenshot" 
+                                     loading="lazy">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-thread"></div>
+                                <h3 class="project-title">Insulince</h3>
+                                <p class="project-description">
+                                    A health tracking application designed to help individuals with Insulin Resistance Syndrome 
+                                    monitor their nutrition and food intake. Features intuitive data visualization and 
+                                    personalized insights.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Redux</span>
+                                    <span class="tech-tag">Node.js</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://github.com/rmurphy178/insulince" class="project-link" 
+                                       target="_blank" rel="noopener noreferrer" aria-label="View Insulince on GitHub">
+                                        <span>View Code</span>
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
 				</div>
 			</article>
+                </div>
+                
+                <div class="projects-footer">
+                    <div class="footer-fabric">
+                        <p>Want to see more of my work?</p>
+                        <a href="https://github.com/maryhowell" class="btn btn-outline" 
+                           target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">
+                            <span class="btn-text">View All Projects on GitHub</span>
+                            <span class="btn-stitch"></span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-		<!-- Portfolio -->
-			<article class="container box style2">
-				<header>
-					<p>Checkout my github </br>
-						<a href="http://www.github.com/maryhowell" class="icon fa-github"><span class="label">Github</span></a></p>
-
+        <!-- Contact Section -->
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
+            <div class="fabric-section-overlay"></div>
+            <div class="container">
+                <header class="section-header">
+                    <div class="section-thread"></div>
+                    <h2 id="contact-heading" class="section-title">Let's Connect</h2>
+                    <p class="section-subtitle">I'm always interested in new opportunities and collaborations</p>
 				</header>
-				<header>
-					<p>Checkout my resume </br>
-						<a href="https://res.cloudinary.com/unravled/image/upload/v1504140552/MaryHowellResume-website_fsoutz.pdf"  class="icon fa-file-text-o"><span class="label">Resume</span></a></p>
-
-				</header>
-				<!-- add pictures when you have more projects. -->
-				<!-- <div class="inner gallery">
-					<div class="row 0%">
-						<div class="3u 12u(mobile)"><a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" alt="" title="Ad infinitum" /></a></div>
-						<div class="3u 12u(mobile)"><a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" alt="" title="Dressed in Clarity" /></a></div>
-						<div class="3u 12u(mobile)"><a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" alt="" title="Raven" /></a></div>
-						<div class="3u 12u(mobile)"><a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" alt="" title="I'll have a cup of Disneyland, please" /></a></div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-fabric">
+                            <p class="contact-intro">
+                                Whether you're looking for a Engineer to join your team, want to collaborate on a project, 
+                                or just want to chat about technology and innovation, I'd love to hear from you!
+                            </p>
+                            
+                            <div class="contact-methods">
+                                <a href="mailto:mary.e.howellstudios@gmail.com" class="contact-method" 
+                                   aria-label="Send email to mary.e.howellstudios@gmail.com">
+                                    <div class="contact-icon">
+                                        <div class="icon-fabric"></div>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                            <polyline points="22,6 12,13 2,6"/>
+                                        </svg>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h3>Email</h3>
+                                        <p>mary.e.howellstudios@gmail.com</p>
+                                    </div>
+                                </a>
+                                
+                                <a href="https://www.linkedin.com/in/mary-howell-13200067/" class="contact-method" 
+                                   target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
+                                    <div class="contact-icon">
+                                        <div class="icon-fabric"></div>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h3>LinkedIn</h3>
+                                        <p>Connect with me professionally</p>
+                                    </div>
+                                </a>
+                                
+                                <a href="https://github.com/maryhowell" class="contact-method" 
+                                   target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">
+                                    <div class="contact-icon">
+                                        <div class="icon-fabric"></div>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h3>GitHub</h3>
+                                        <p>Check out my code and projects</p>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="resume-download">
+                            <a href="images/MaryHowellResume.pdf" class="btn btn-outline" 
+                               target="_blank" rel="noopener noreferrer" aria-label="Download my resume">
+                                    <span class="btn-text">Download Resume</span>
+                                    <span class="btn-stitch"></span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                        <polyline points="7,10 12,15 17,10"/>
+                                        <line x1="12" y1="15" x2="12" y2="3"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 					</div>
-					<div class="row 0%">
-						<div class="3u 12u(mobile)"><a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" alt="" title="Cherish" /></a></div>
-						<div class="3u 12u(mobile)"><a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" alt="" title="Different." /></a></div>
-						<div class="3u 12u(mobile)"><a href="images/fulls/07.jpg" class="image fit"><img src="images/thumbs/07.jpg" alt="" title="History was made here" /></a></div>
-						<div class="3u 12u(mobile)"><a href="images/fulls/08.jpg" class="image fit"><img src="images/thumbs/08.jpg" alt="" title="People come and go and walk away" /></a></div>
 					</div>
-				</div> -->
-			</article>
+        </section>
+    </main>
 
-		<!-- Contact -->
-			<article class="container box style3">
-				<header>
-					<h2>Leave a Note</h2>
-					<p>Feel free to react out about job opportunities or any fun facts you have</p>
-				</header>
-				<form method="post" "https://formspree.io/mary.e.howellstudios@gmail.com">
-					<div class="row 50%">
-						<div class="6u 12u$(mobile)"><input type="text" class="text" name="name" placeholder="Name" /></div>
-						<div class="6u$ 12u$(mobile)"><input type="text" class="text" name="email" placeholder="Email" /></div>
-						<div class="12u$">
-							<textarea name="message" placeholder="Message"></textarea>
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-fabric-overlay"></div>
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    &copy; 2025 Mary Howell. Woven with ❤️.
+                </p>
+                <div class="footer-links">
+                    <a href="https://github.com/maryhowell" target="_blank" rel="noopener noreferrer" 
+                       aria-label="GitHub" class="footer-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mary-howell-13200067/" target="_blank" rel="noopener noreferrer" 
+                       aria-label="LinkedIn" class="footer-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
 						</div>
-						<div class="12u$">
-							<ul class="actions">
-								<li><input type="submit" value="Send Message" /></li>
-							</ul>
 						</div>
 					</div>
-				</form>
-			</article>
+    </footer>
 
+    <!-- JavaScript -->
+    <script>
+        // Mobile navigation toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        navToggle.addEventListener('click', () => {
+            const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', !isExpanded);
+            navMenu.classList.toggle('active');
+            document.body.classList.toggle('nav-open');
+        });
 
-		<section id="footer">
-			<ul class="icons">
-				<li><a href="http://www.github.com/maryhowell" class="icon fa-github"><span class="label">Github</span></a></li>
-				<li><a href="https://www.linkedin.com/in/mary-howell-13200067/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-				<li><a href="https://www.instagram.com/kittymeowmerz/?hl=en" class="icon fa-instagram"><span class="label">instagram</span></a></li>
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+                document.body.classList.remove('nav-open');
+            });
+        });
 
-			</ul>
-			<div class="copyright">
-				<ul class="menu">
-					<li>&copy; MaryHowell. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</section>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+        // Add scroll effect to navbar
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.navbar');
+        
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
 
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.project-card, .skill-category, .contact-method').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Floating threads animation
+        function animateThreads() {
+            const threads = document.querySelectorAll('.thread');
+            threads.forEach((thread, index) => {
+                const delay = index * 0.5;
+                thread.style.animationDelay = `${delay}s`;
+            });
+        }
+
+        animateThreads();
+
+        // Theme Switcher Functionality
+        const themeToggle = document.querySelector('.theme-toggle');
+        const themeOptions = document.querySelector('.theme-options');
+        const themeDropdown = document.querySelector('.theme-dropdown');
+        const themeButtons = document.querySelectorAll('.theme-option');
+
+        // Theme configurations - colors extracted from your photo
+        const themes = {
+            warm: {
+                name: 'Warm',
+                colors: {
+                    primary: '#d4a574',      // Warm skin tone
+                    secondary: '#b8956a',    // Deeper skin tone
+                    accent: '#f4d1a6',       // Light skin highlight
+                    background: '#fef9f3',   // Warm cream background
+                    surface: '#f5e6d3',      // Soft warm surface
+                    text: '#3d2f1f',         // Warm dark brown
+                    textSecondary: '#6b5b47' // Medium warm brown
+                }
+            },
+            cool: {
+                name: 'Purple',
+                colors: {
+                    primary: '#8b5a96',      // Purple from hair
+                    secondary: '#6b4c73',    // Deeper purple
+                    accent: '#b894c1',       // Light purple
+                    background: '#f8f5f9',   // Soft purple-tinted white
+                    surface: '#f0e8f2',      // Light purple surface
+                    text: '#2d1b33',         // Dark purple-brown
+                    textSecondary: '#5a4a5f' // Medium purple-brown
+                }
+            },
+            dark: {
+                name: 'Dark',
+                colors: {
+                    primary: '#d4c5b9',      // Light warm accent
+                    secondary: '#8b7a5a',    // Medium warm tone
+                    accent: '#f4d1a6',       // Light skin highlight
+                    background: '#1a1611',   // Dark background
+                    surface: '#2d251f',      // Dark surface
+                    text: '#ffffff',         // Pure white for maximum contrast
+                    textSecondary: '#e8ddd4' // Light warm text with better contrast
+                }
+            },
+            light: {
+                name: 'Pastel',
+                colors: {
+                    primary: '#a8c8ec',      // Light blue from background
+                    secondary: '#8bb3d9',    // Medium blue
+                    accent: '#d1e5f7',       // Very light blue
+                    background: '#ffffff',   // Pure white
+                    surface: '#f8fbff',      // Very light blue tint
+                    text: '#2c3e50',         // Dark blue-gray
+                    textSecondary: '#5a6c7d' // Medium blue-gray
+                }
+            }
+        };
+
+        // Load saved theme or default to warm
+        let currentTheme = localStorage.getItem('selectedTheme') || 'warm';
+
+        // Apply theme
+        function applyTheme(themeName) {
+            const theme = themes[themeName];
+            if (!theme) return;
+
+            const root = document.documentElement;
+            const colors = theme.colors;
+
+            // Update CSS custom properties
+            root.style.setProperty('--primary-color', colors.primary);
+            root.style.setProperty('--secondary-color', colors.secondary);
+            root.style.setProperty('--accent-color', colors.accent);
+            root.style.setProperty('--background-color', colors.background);
+            root.style.setProperty('--surface-color', colors.surface);
+            root.style.setProperty('--text-color', colors.text);
+            root.style.setProperty('--text-secondary', colors.textSecondary);
+
+            // Update active theme button
+            themeButtons.forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.dataset.theme === themeName) {
+                    btn.classList.add('active');
+                }
+            });
+
+            // Update theme label
+            const themeLabel = document.querySelector('.theme-label');
+            themeLabel.textContent = theme.name;
+
+            // Save to localStorage
+            localStorage.setItem('selectedTheme', themeName);
+            currentTheme = themeName;
+        }
+
+        // Toggle dropdown
+        themeToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isExpanded = themeToggle.getAttribute('aria-expanded') === 'true';
+            themeToggle.setAttribute('aria-expanded', !isExpanded);
+            themeOptions.classList.toggle('active');
+        });
+
+        // Theme selection
+        themeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const themeName = button.dataset.theme;
+                applyTheme(themeName);
+                themeOptions.classList.remove('active');
+                themeToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!themeDropdown.contains(e.target)) {
+                themeOptions.classList.remove('active');
+                themeToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Apply saved theme on page load
+        applyTheme(currentTheme);
+    </script>
 	</body>
 </html>
